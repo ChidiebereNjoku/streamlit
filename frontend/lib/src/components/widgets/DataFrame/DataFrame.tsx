@@ -1186,6 +1186,7 @@ function DataFrame({
             left={showMenu.headerBounds.x + showMenu.headerBounds.width}
             column={originalColumns[showMenu.columnIdx]}
             data={data}
+            isEditable={editingMode !== READ_ONLY}
             onCloseMenu={() => setShowMenu(undefined)}
             onSortColumn={
               isSortingEnabled
